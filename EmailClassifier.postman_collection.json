@@ -1,0 +1,29 @@
+{
+  "info": {
+    "name": "EmailClassifierAPI",
+    "_postman_id": "11111111-2222-3333-4444-555555555555",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Classify Email",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"Hello, John Doe here. My email is john@example.com.\"\n}"
+        },
+        "url": {
+          "raw": "https://<your-space-name>.hf.space/classify",
+          "protocol": "https",
+          "host": ["<your-space-name>", "hf", "space"],
+          "path": ["classify"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
